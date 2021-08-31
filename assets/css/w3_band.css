@@ -1,0 +1,504 @@
+
+/* CSS chung */
+html {
+    scroll-behavior: smooth;
+    transition: all .3s;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.mr-8{
+    margin-right: 8px;
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: 33.33333%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.input{
+    border: 1px solid #ccc;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* -----------------------------style css-------------------------------- */
+
+.header{
+    height: 46px;
+    background: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1200;
+}
+.nav{
+    display: inline-block;
+}
+.nav li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+.nav li a{
+    padding: 0px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 46px;
+    display: block;
+}
+.nav .sub-nav{
+    background-color: #fff;
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    box-shadow: 0px 1px 10px grey;
+    /* z-index: 1201; */
+}
+.nav .sub-nav li{
+    display: block;
+}
+.nav > li:hover > a,
+.nav .sub-nav li:hover a{
+    background-color: #cccccc;
+    color: #000000;
+    cursor: pointer;
+    transition: all .3s;
+}
+.nav .sub-nav a{
+    color: black;
+    text-align: left;
+    padding: 0px 12px;
+    line-height: 38px;
+}
+.nav li:hover .sub-nav{
+    display: block;
+}
+
+.mobile-menu-btn,
+.search-btn{
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+.mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.mobile-menu-btn .mobile-menu-icon,
+.search-btn .search-icon{
+    font-size:18px;
+    font-weight: bold;
+    line-height: 46px;
+    padding: 14px 24px
+}
+.search-icon:hover {
+    background-color: #F44336;
+}
+.mobile-menu-icon:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+/*  Slide*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.text-contnet {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    color: white;
+    text-shadow: 0px 0px 1px #000;
+}
+.text-contnet .heading-text{
+    font-size: 24px;
+    margin: 10px 0px;
+}
+.text-contnet p{
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+.content-section{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 64px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-section .section-heading,.section-sub-heading{
+    text-align: center;
+}
+.content-section .section-heading{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 10px 0px;
+}
+.content-section .section-sub-heading{
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 15px 0px 30px;
+    opacity: 0.6;
+}
+.content-section .band-content{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+}
+.content-section .band-member{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.band-member .member-name{
+    display: block;
+    margin: 15px 0px;
+}
+.band-member img {
+    border-radius: 3px;
+    width: 154px;
+}
+#tour-section{
+    background-color: #000000;
+    color: #ffffff;
+}
+.list-tour-date{
+    background-color: #ffffff;
+    color: #757575;
+    font-size: 15px;
+}
+.list-tour-date li{
+    line-height: 1.5;
+    padding: 8px 16px;
+}
+.list-tour-date li:not(:last-child){
+    border-bottom: 1px solid #ddd;
+}
+.list-tour-date .sold-out{
+    color: #ffffff;
+    background-color: #F44336;
+    margin-left: 16px;
+    padding: 0px 8px;
+    line-height: 22px;
+    display: inline-block;
+}
+.list-tour-date .num{
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0px 8px;
+    margin-right: 16px;
+    float: right;
+    border-radius: 50%;
+}
+.ticket-card{
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.ticket-card img{
+    width: 100%;
+}
+.ticket-card img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.ticket-card .ticket-content{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0px 16px;
+    margin-top: -2px;
+    padding-bottom: 16px;
+}
+.ticket-content .ticket-heading{
+    padding: 15px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.ticket-content .tickets-date{
+    padding: 15px 0px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+.ticket-content .ticket-desc{
+    padding: 0px 0px 15px 0px;
+    word-break: break-all;
+    font-size: 15px;
+    text-align: justify;
+}
+.contact-content{
+    margin: 32px 0px;
+}
+
+.item-list{
+    display: block;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1.5
+}
+
+.item-list a{
+    color:#004b89;
+    opacity: 0.8;
+}
+.item-list a:hover{
+    opacity: 1;
+}
+
+.item-list .icon-contact{
+    float: left;
+    font-weight: 700;
+    width: 30px;
+    line-height: 1.5;
+}
+.item-list .list-desc{
+    float: left;
+    font-weight: 400;
+}
+
+.form-control{
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Map */
+
+.map img{
+    width: 100%;
+}
+
+
+.footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.footer .social{
+    margin: 0px auto;
+}
+
+.footer .social a{
+    text-decoration: none;
+    color: #656565;
+    font-size: 24px;
+}
+
+.footer .copyright a:hover,
+.footer .social a:hover{
+    opacity: 0.8;
+}
+.footer .copyright{
+    margin-top: 16px;
+    color: #656565;
+}
+
+.footer .copyright a{
+    padding: 12px 0px;
+    display: inline-block;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 300px;
+    position: relative;
+    top: 0px;
+    animation: modalFadeIn ease .5s;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 900 !important;
+}
+.modal-close:hover{
+    opacity: 0.9;
+} 
+
+.modal-header{
+    height: 129px;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-header>span{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-body label{
+    font-size: 15px;
+    display: block;
+    margin-bottom: 12px;
+}
+.modal-body .modal-input{
+    width: 100%;
+    padding: 13px;
+    font-size: 15px;
+    margin-bottom: 24px;
+    border: 1px solid #ccc;
+}
+.modal-button {
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    background: #009688;
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.modal-button:hover{
+    opacity: 0.8;
+}
+
+.modal-footer{
+    font-size: 15px;
+    padding: 16px
+}
+
+.modal-footer p{
+    text-align: right;
+}
+
+.modal-footer a{
+    color: #2196f3;
+}
+
+@keyframes modalFadeIn {
+    from{
+        transform: translateY(-150px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
